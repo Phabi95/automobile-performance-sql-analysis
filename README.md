@@ -94,10 +94,10 @@ Install a SQL database (PostgreSQL or MySQL recommended)
 
 Import .sql files in order:
 
-psql -d your_database -f schema/01_create_tables.sql
-psql -d your_database -f schema/02_insert_data.sql
+psql -d your_database -f schema/create_tables.sql
+psql -d your_database -f schema/insert_data.sql
 
 Run analytical queries:
 
 psql -d your_database -f queries/automobile_analysis_queries.sql
-psql -d your_database -f queries/zscore_outlier_detection.sqlS
+psql -d your_database -f queries/zscore_outlier_detection.sql
